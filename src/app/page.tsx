@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+    FaCode,
+    FaGithubSquare,
+    FaLinkedin,
+    FaWordpress,
+} from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
 import { HiDocumentText } from "react-icons/hi";
 import {
     SiNextdotjs,
@@ -12,11 +18,13 @@ import classNames from "classnames";
 import Link from "next/link";
 import Header from "./header";
 import Footer from "./footer";
+import { Project, projectsData } from "./data";
 
 export default function Home() {
     const skillStyle =
         "p-4 rounded-2xl font-bold flex flex-col justify-center items-center text-theDarkBlue hover:bg-theDarkBlue hover:text-white select-none";
     const transitionStyle = "transition-colors duration-300 ease-linear";
+
     return (
         <>
             <Header />
@@ -154,6 +162,36 @@ export default function Home() {
                         </ul>
                     </section>
                 </article>
+                <article id="services" className=" md:px-28">
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-2xl font-bold text-theDarkBlue ">
+                            Services
+                        </h2>
+                        <hr className="my-2 border-2 w-48" />
+                    </div>
+                    <section className="py-4 flex justify-center">
+                        <ul className="flex gap-2 md:gap-8">
+                            <li className="text-theDarkBlue hover:bg-theDarkBlue hover:text-white transition-all rounded-md px-2 py-8 flex flex-col items-center text-center max-w-[12rem]">
+                                <FaCode className="text-4xl " />
+                                <p className="text-lg ">
+                                    Custom Website Development
+                                </p>
+                            </li>
+                            <li className="text-theDarkBlue hover:bg-theDarkBlue hover:text-white transition-all rounded-md px-2 py-8 flex flex-col items-center text-center max-w-[12rem]">
+                                <MdDesignServices className="text-4xl " />
+                                <p className="text-lg ">
+                                    Website Redesign & Development
+                                </p>
+                            </li>
+                            <li className="text-theDarkBlue hover:bg-theDarkBlue hover:text-white transition-all rounded-md px-2 py-8 flex flex-col items-center text-center max-w-[12rem]">
+                                <FaWordpress className="text-4xl " />
+                                <p className="text-lg ">
+                                    Wordpress Website Development
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
                 <article id="projects" className="mb-8 md:px-28">
                     <div className="flex flex-col items-center">
                         <h2 className="text-2xl font-bold text-theDarkBlue ">
@@ -165,17 +203,7 @@ export default function Home() {
                         COMING SOON ...
                     </section>
                 </article>
-                <article id="services" className="mb-8 md:px-28">
-                    <div className="flex flex-col items-center">
-                        <h2 className="text-2xl font-bold text-theDarkBlue ">
-                            Services
-                        </h2>
-                        <hr className="my-2 border-2 w-48" />
-                    </div>
-                    <section className="py-4 flex justify-center animate-pulse">
-                        COMING SOON ...
-                    </section>
-                </article>
+
                 <article id="experience" className="mb-8 md:px-28">
                     <div className="flex flex-col items-center">
                         <h2 className="text-2xl font-bold text-theDarkBlue ">
