@@ -154,6 +154,17 @@ export default function Home() {
                         </ul>
                     </section>
                 </article>
+                <article id="projects" className="mb-8 md:px-28">
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-2xl font-bold text-theDarkBlue ">
+                            Projects
+                        </h2>
+                        <hr className="my-2 border-2 w-48" />
+                    </div>
+                    <section className="py-4 flex justify-center animate-pulse">
+                        COMING SOON ...
+                    </section>
+                </article>
                 <article id="experience" className="mb-8 md:px-28">
                     <div className="flex flex-col items-center">
                         <h2 className="text-2xl font-bold text-theDarkBlue ">
