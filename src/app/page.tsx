@@ -170,7 +170,7 @@ export default function Home() {
                         <hr className="my-2 border-2 w-48" />
                     </div>
                     <section className="py-4 flex justify-center">
-                        <ul className="flex gap-2 md:gap-8">
+                        <ul className="flex gap-2 md:gap-8 justify-center items-center flex-wrap">
                             <li className="text-theDarkBlue hover:bg-theDarkBlue hover:text-white transition-all rounded-md px-2 py-8 flex flex-col items-center text-center max-w-[12rem]">
                                 <FaCode className="text-4xl " />
                                 <p className="text-lg ">

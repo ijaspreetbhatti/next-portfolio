@@ -4,7 +4,7 @@ export default function Header() {
             <h1 className="font-bold text-2xl">
                 Jaspreet&nbsp;Singh&nbsp;Bhatti
             </h1>
-            <ul className="flex gap-8 items-center">
+            <ul className="flex gap-6 md:gap-8 items-center">
                 <li>
                     <a href="#projects">Projects</a>
                 </li>
