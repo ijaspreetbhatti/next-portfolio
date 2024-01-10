@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Jaspreet Bhatti",
-    description: "Personal website of Jaspreet Bhatti",
+    description: "Portfolio of Jaspreet Bhatti",
 };
 
 export default function RootLayout({
@@ -16,6 +16,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/favicon.jpg" sizes="any" />
+            </head>
             <body className={inter.className}>{children}</body>
         </html>
     );

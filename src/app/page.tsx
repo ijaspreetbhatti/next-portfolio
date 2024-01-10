@@ -10,53 +10,43 @@ import {
 } from "react-icons/si";
 import classNames from "classnames";
 import Link from "next/link";
+import Header from "./header";
+import Footer from "./footer";
 
 export default function Home() {
     const skillStyle =
-        "border-2 p-4 border-theDarkBlue rounded-lg font-bold flex flex-col justify-center items-center text-theDarkBlue hover:bg-theDarkBlue hover:text-theDarkRed select-none";
+        "p-4 rounded-2xl font-bold flex flex-col justify-center items-center text-theDarkBlue hover:bg-theDarkBlue hover:text-white select-none";
     const transitionStyle = "transition-colors duration-300 ease-linear";
     return (
-        <main className="h-full font-mono p-5 text-theDarkBlue">
-            <div className="h-full overflow-auto duration- bg-theLightGray p-5 md:p-10 flex flex-col items-center gap-4 relative border-[0.25rem] border-theDarkBlue rounded-xl">
-                <Image
-                    src="/images/jay.png"
-                    alt="Jay"
-                    width={300}
-                    height={300}
-                    className="rounded-full border-4 border-theDarkBlue"
-                />
-                <h1 className="font-bold text-theDarkBlue pb-5 text-6xl font-serif select-none">
-                    Jaspreet <span className="text-theDarkRed">(Jay)</span>{" "}
-                    Bhatti
-                </h1>
-                <article
-                    className={classNames(
-                        "m-4 bg-theLightGray rounded-lg border-2 border-theDarkGray flex flex-col gap-4",
-                        "lg:w-[50%]",
-                        "hover:bg-theDarkBlue hover:text-theBrightRed",
-                        transitionStyle
-                    )}
-                >
-                    <section className="flex flex-col gap-10 justify-center p-4">
-                        <p className="text-2xl">
-                            Hi 👋🏻, I&apos;m Jay, a passionate full-stack web
-                            developer with 2.5+ years of experience 🚀 in
-                            Next.js, React, Node.js, and Flutter. My strong
-                            understanding of agile methodologies and design
-                            thinking, coupled with my dedication to ongoing
-                            learning and emerging tech trends, enables me to
-                            deliver innovative solutions that exceed user
-                            expectations and achieve business goals. Let&apos;s
-                            build great apps together.
+        <>
+            <Header />
+            <main className="p-12 text-theDarkBlue font-body flex flex-col justify-center">
+                <article className="flex flex-col md:flex-row gap-8 justify-center items-center">
+                    <section className="flex flex-col justify-center md:px-12">
+                        <p className="font-extrabold text-theDarkBlue md:text-justify font-mono text-xl max-w-xl">
+                            Hi 👋🏻, I&apos;m{" "}
+                            <span className="text-theBlue font-extrabold">
+                                Jaspreet
+                            </span>
+                            , an agile full-stack dev with{" "}
+                            <span className="text-theBlue">3 years</span> of
+                            experience 🚀 in{" "}
+                            <span className="text-theBlue">
+                                Next.js, React, Node.js, and Flutter
+                            </span>
+                            . A life long techie who believes in technolgy for
+                            <span className="text-theBlue"> human progess</span>
+                            . Let&apos;s make the world more humane.
                         </p>
-                        <div className="text-6xl flex gap-4 justify-center">
+                        <hr className="border-2 mx-24 my-6" />
+                        <div className="text-4xl flex gap-4 justify-center">
                             <Link
                                 href={
                                     "https://www.linkedin.com/in/ijaspreetbhatti/"
                                 }
                                 title="Linkedin"
                                 className={classNames(
-                                    "hover:text-theDarkRed",
+                                    "hover:text-theBlue",
                                     transitionStyle
                                 )}
                             >
@@ -66,7 +56,7 @@ export default function Home() {
                                 href={"https://github.com/ijaspreetbhatti/"}
                                 title="Github"
                                 className={classNames(
-                                    "hover:text-theDarkRed",
+                                    "hover:text-theBlue",
                                     transitionStyle
                                 )}
                             >
@@ -78,25 +68,33 @@ export default function Home() {
                                 }
                                 title="Resume"
                                 className={classNames(
-                                    "hover:text-theDarkRed",
+                                    "hover:text-theBlue",
                                     transitionStyle
                                 )}
                             >
                                 <HiDocumentText />
                             </Link>
                         </div>
-                    </section>
+                    </section>{" "}
+                    <Image
+                        className="rounded-3xl border-[0.25rem] border-theBlue hover:scale-105 transition-all"
+                        src="/images/jay.png"
+                        alt="Jay"
+                        width={320}
+                        height={320}
+                    />
                 </article>
-                <article className="w-full">
-                    <h2 className="text-4xl font-bold text-theDarkBlue">
-                        Skills
-                    </h2>
-                    <hr className="w-full border-2 border-theDarkBlue" />
-                    <section className="w-full text-2xl py-4">
-                        <ul className="flex flex-col gap-1">
-                            <li>
-                                I&apos;m well versed with:
-                                <ul className="flex gap-2 justify-evenly py-2 flex-wrap">
+                <article className="my-8 md:px-28">
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-2xl font-bold text-theDarkBlue ">
+                            Skills
+                        </h2>
+                        <hr className="my-2 border-2 w-48" />
+                    </div>
+                    <section className="w-full py-4">
+                        <ul className="flex flex-col gap-1 items-center">
+                            <li className="text-base">
+                                <ul className="flex gap-2 justify-center py-2 flex-wrap">
                                     <li
                                         className={classNames(
                                             skillStyle,
@@ -156,14 +154,87 @@ export default function Home() {
                         </ul>
                     </section>
                 </article>
-                <article className="w-full">
-                    <h2 className="text-4xl font-bold text-theDarkBlue">
-                        Experience
-                    </h2>
-                    <hr className="w-full border-2 border-theDarkBlue" />
-                    <p className="w-full"></p>
+                <article id="experience" className="mb-8 md:px-28">
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-2xl font-bold text-theDarkBlue ">
+                            Experience
+                        </h2>
+                        <hr className="my-2 border-2 w-64" />
+                    </div>
+                    <ul className="flex flex-col gap-2 justify-center">
+                        <li className="flex flex-col items-center">
+                            <Image
+                                className="rounded-md hover:scale-105 transition-all p-2 my-2"
+                                src="/images/tap-and-go.png"
+                                alt="Tap&Go EV"
+                                width={200}
+                                height={200}
+                            />
+                            <h3 className="text-lg text-theBlue">
+                                Software Developer @ Tap&Go EV
+                            </h3>
+                            <p>
+                                Flutter · React.js · Tailwind CSS · React Query
+                                · Next.js · JavaScript · TypeScript · GitHub
+                            </p>
+                            <hr className="my-2 border-2 w-16" />
+                        </li>
+                        <li className="flex flex-col items-center">
+                            <Image
+                                className="rounded-md hover:scale-105 transition-all bg-green-900 p-2 my-2"
+                                src="/images/garden.png"
+                                alt="Garden Intelligence"
+                                width={128}
+                                height={128}
+                            />
+                            <h3 className="text-lg text-theBlue">
+                                Full Stack Developer @ Garden Intelligence
+                            </h3>
+                            <p>
+                                React.js · Tailwind CSS · JavaScript · Node.js ·
+                                Express.js
+                            </p>
+                            <hr className="my-2 border-2 w-16" />
+                        </li>
+                        <li className="flex flex-col items-center">
+                            <Image
+                                className="rounded-md hover:scale-105 transition-all p-2"
+                                src="/images/langara.jpeg"
+                                alt="Langara College"
+                                width={256}
+                                height={256}
+                            />
+                            <h3 className="text-lg text-theBlue">
+                                Frontend Developer @ Langara College
+                            </h3>
+                            <p>
+                                Front-End Development · Software Infrastructure
+                                · styled-components · Headless CMS · Next.js ·
+                                JavaScript
+                            </p>
+                            <hr className="my-2 border-2 w-16" />
+                        </li>
+                        <li className="flex flex-col items-center">
+                            <Image
+                                className="rounded-md hover:scale-105 transition-all p-2"
+                                src="/images/ibm.jpeg"
+                                alt="IBM"
+                                width={120}
+                                height={120}
+                            />
+                            <h3 className="text-lg text-theBlue">
+                                Application Developer @ IBM
+                            </h3>
+                            <p>
+                                Mean Stack · Angular · Redux.js · SASS · Angular
+                                Material · Node.js · TypeScript
+                            </p>
+                            <hr className="my-2 border-2 w-16" />
+                        </li>
+                    </ul>
                 </article>
-            </div>
-        </main>
+            </main>
+            <Footer />
+        </>
     );
 }
