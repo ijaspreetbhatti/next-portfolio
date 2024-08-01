@@ -42,8 +42,11 @@ export default function Home() {
                             <span className="text-theBlue">
                                 Next.js, React, Node.js, and Flutter
                             </span>
-                            . A life long techie who believes in technolgy for
-                            <span className="text-theBlue"> human progess</span>
+                            . A life long techie who believes in technology for
+                            <span className="text-theBlue">
+                                {" "}
+                                human progress
+                            </span>
                             . Let&apos;s make the world more humane.
                         </p>
                         <hr className="border-2 mx-24 my-6" />
