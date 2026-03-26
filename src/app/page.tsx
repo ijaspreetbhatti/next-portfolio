@@ -37,7 +37,7 @@ export default function Home() {
                                 Jaspreet
                             </span>
                             , an agile full-stack dev with{" "}
-                            <span className="text-theBlue">4 years</span> of
+                            <span className="text-theBlue">5 years</span> of
                             experience 🚀 in{" "}
                             <span className="text-theBlue">
                                 Next.js, React, Node.js, and Flutter
