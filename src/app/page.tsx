@@ -58,7 +58,7 @@ export default function Home() {
                                 title="Linkedin"
                                 className={classNames(
                                     "hover:text-theBlue",
-                                    transitionStyle
+                                    transitionStyle,
                                 )}
                             >
                                 <FaLinkedin />
@@ -68,7 +68,7 @@ export default function Home() {
                                 title="Github"
                                 className={classNames(
                                     "hover:text-theBlue",
-                                    transitionStyle
+                                    transitionStyle,
                                 )}
                             >
                                 <FaGithubSquare />
@@ -80,7 +80,7 @@ export default function Home() {
                                 title="Resume"
                                 className={classNames(
                                     "hover:text-theBlue",
-                                    transitionStyle
+                                    transitionStyle,
                                 )}
                             >
                                 <HiDocumentText />
@@ -109,7 +109,7 @@ export default function Home() {
                                     <li
                                         className={classNames(
                                             skillStyle,
-                                            transitionStyle
+                                            transitionStyle,
                                         )}
                                     >
                                         <SiFlutter className="text-4xl" />
@@ -118,7 +118,7 @@ export default function Home() {
                                     <li
                                         className={classNames(
                                             skillStyle,
-                                            transitionStyle
+                                            transitionStyle,
                                         )}
                                     >
                                         <SiReact className="text-4xl" />
@@ -127,7 +127,7 @@ export default function Home() {
                                     <li
                                         className={classNames(
                                             skillStyle,
-                                            transitionStyle
+                                            transitionStyle,
                                         )}
                                     >
                                         <SiNextdotjs className="text-4xl" />
@@ -136,7 +136,7 @@ export default function Home() {
                                     <li
                                         className={classNames(
                                             skillStyle,
-                                            transitionStyle
+                                            transitionStyle,
                                         )}
                                     >
                                         <SiTypescript className="text-4xl" />
@@ -145,7 +145,7 @@ export default function Home() {
                                     <li
                                         className={classNames(
                                             skillStyle,
-                                            transitionStyle
+                                            transitionStyle,
                                         )}
                                     >
                                         <SiTailwindcss className="text-4xl" />
